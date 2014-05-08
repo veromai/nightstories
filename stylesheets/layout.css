@@ -1,12 +1,3 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
 /* Table of Content
 ==================================================
 	#Site Styles
@@ -16,6 +7,49 @@
 
 /* #Site Styles
 ================================================== */
+body {
+	width: 640px;
+	position: absolute;
+	left: 50%;
+	margin: 0px 0px 0px -320px;
+	font-family: sans-serif;
+	font-size: 0.84em;
+}
+
+
+.full-width,
+.half-width,
+.third-width,
+.quarter-width {
+	float: left;
+	margin-left: 2.5%;
+}
+
+.full-width 	{width: 95%;}
+.half-width 	{width: 44%;}
+.third-width 	{width: 30%;}
+.quarter-width 	{width: 21.8%;}
+
+.container {
+	background: #FECEEE;
+	float: left;
+}
+
+.header {}
+.header .heading {
+	margin: 0px;
+}
+.header .heading.heading1 .headerImg {width: 100%;}
+.header .heading.heading2 {
+	display: none;
+}
+
+.content {}
+.content .heading {
+	color: #FB26A3;
+	font-weight: normal;
+	font-size: 1.1em;
+}
 
 /* #Page Styles
 ================================================== */
@@ -30,13 +64,43 @@
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+
+		body {
+			position: relative;
+			left: 0;
+			width: 100%;
+			margin: 0;
+		}
+
+		.full-width,
+		.half-width,
+		.third-width,
+		.quarter-width {
+			float: left;
+			margin-left: 2.5%;
+		}
+
+		.full-width 	{width: 95%;}
+		.half-width 	{width: 44%;}
+		.third-width 	{width: 30%;}
+		.quarter-width 	{width: 21.8%;}
+
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+
+		.full-width,
+		.half-width,
+		.third-width,
+		.quarter-width {
+			width: 95%;
+		}
+	}
 
 
 /* #Font-Face
